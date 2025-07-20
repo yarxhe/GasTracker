@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 [![Telegram Channel](https://img.shields.io/badge/📢-Telegram_Channel-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/gastastion)
 
-### 🌐 Language / Язык
+### 🌐 Language
 [![EN](https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge)](#-english-version)
 [![RU](https://img.shields.io/badge/🇷🇺-Русский-red?style=for-the-badge)](#-русская-версия)
 
