@@ -5,11 +5,12 @@
 ![Gas Tracker Bot](https://img.shields.io/badge/Gas-Tracker-blue?style=for-the-badge&logo=telegram)
 ![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 [![Telegram Channel](https://img.shields.io/badge/📢-Telegram_Channel-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/gastastion)
 
 ### 🌐 Language / Язык
-[![EN](https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge)](#english-version)
-[![RU](https://img.shields.io/badge/🇷🇺-Русский-red?style=for-the-badge)](#русская-версия)
+[![EN](https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge)](#-english-version)
+[![RU](https://img.shields.io/badge/🇷🇺-Русский-red?style=for-the-badge)](#-русская-версия)
 
 </div>
 
