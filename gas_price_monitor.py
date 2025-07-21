@@ -100,7 +100,7 @@ def format_final_message(network_prices: dict) -> str:
         
     # Футер с точным временем
     current_time_utc = datetime.datetime.now(datetime.timezone.utc).strftime("%d.%m.%Y %H:%M:%S UTC")
-    footer = f"=====================\n⏰ <code>{current_time_utc}</code>\n{config.FOOTER_TEXT}"
+    footer = f"=====================\n⏰ <code>{current_time_utc}</code>\n\n{config.FOOTER_TEXT}"
 
     return header + message_body + footer
 
