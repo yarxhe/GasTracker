@@ -1,0 +1,15 @@
+.venv
+venv
+
+.git
+.idea
+.vscode
+
+__pycache__/
+*.pyc
+*.pyo
+
+.env
+
+*.tar
+*.tar.gz

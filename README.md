@@ -160,25 +160,87 @@ GAS_THRESHOLD_WARN=25
 
 </details>
 
-## 🐳 Docker Deployment
+# 🐳 Docker Deployment
 
 <div align="center">
 
 ### 🎯 Recommended way for 24/7 operation
+*Simple, reliable, and production-ready*
 
 </div>
 
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ Build & Run
 ```bash
-# 1️⃣ Build image
+# Build the image
 docker build -t gas-tracker-bot .
 
-# 2️⃣ Run container
+# Run container in background
 docker run -d \
   --name gas-bot \
   --restart unless-stopped \
   --env-file .env \
   gas-tracker-bot
 ```
+
+### 2️⃣ Check Status
+```bash
+# View logs
+docker logs gas-bot
+
+# Check if running
+docker ps
+```
+
+---
+
+## 💾 Alternative: Build & Export
+
+> **💡 Pro Tip**: Perfect for servers with slow internet or network issues
+
+```bash
+# Build and save to archive
+docker build -t gas-tracker-bot .
+docker save gas-tracker-bot | gzip > gas-tracker-bot.tar.gz
+
+# Transfer to server and load
+scp gas-tracker-bot.tar.gz user@server:/tmp/
+ssh user@server "docker load < /tmp/gas-tracker-bot.tar.gz"
+```
+
+---
+
+## 🔧 Management Commands
+
+| Command | Description |
+|---------|-------------|
+| `docker stop gas-bot` | Stop the bot |
+| `docker start gas-bot` | Start the bot |
+| `docker restart gas-bot` | Restart the bot |
+| `docker logs -f gas-bot` | Follow logs in real-time |
+| `docker rm gas-bot` | Remove container |
+
+---
+
+## 📋 Environment Variables
+
+Create `.env` file:
+```env
+TELEGRAM_BOT_TOKEN=your_bot_token
+WEB3_PROVIDER_URL=your_rpc_url
+CHAT_ID=your_chat_id
+```
+
+---
+
+<div align="center">
+
+### ✨ Ready to monitor gas prices 24/7! ✨
+
+</div>
 
 ### 🛠️ Container Management
 
@@ -288,18 +350,14 @@ We welcome contributions to the project!
 4. 📤 Push changes (`git push origin feature/amazing-feature`)
 5. 🔄 Create Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
 
 ## 💬 Support
 
 If you have questions or need help:
 
 - 📢 **Telegram Channel**: [Gas Station](https://t.me/gastastion)
-- 📧 Email: support@gastrack.com
 - 💬 Developer: [@devheadb](https://t.me/devheadb)
-- 🐛 Issues: [GitHub Issues](https://github.com/your_username/gastracker/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/yarxhe/gastracker/issues)
 
 ---
 
@@ -447,25 +505,87 @@ GAS_THRESHOLD_WARN=25
 
 </details>
 
-## 🐳 Развертывание с Docker
+# 🐳 Развертывание через Docker
 
 <div align="center">
 
-### 🎯 Рекомендуемый способ для 24/7 работы
+### 🎯 Рекомендуемый способ для работы 24/7
+*Простой, надежный и готовый к продакшену*
 
 </div>
 
+---
+
+## 🚀 Быстрый старт
+
+### 1️⃣ Сборка и запуск
 ```bash
-# 1️⃣ Собираем образ
+# Собираем образ
 docker build -t gas-tracker-bot .
 
-# 2️⃣ Запускаем контейнер
+# Запускаем контейнер в фоновом режиме
 docker run -d \
   --name gas-bot \
   --restart unless-stopped \
   --env-file .env \
   gas-tracker-bot
 ```
+
+### 2️⃣ Проверка статуса
+```bash
+# Смотрим логи
+docker logs gas-bot
+
+# Проверяем запущенные контейнеры
+docker ps
+```
+
+---
+
+## 💾 Альтернатива: Сборка и экспорт
+
+> **💡 Лайфхак**: Идеально для серверов с медленным интернетом или проблемами с сетью
+
+```bash
+# Собираем и сохраняем в архив
+docker build -t gas-tracker-bot .
+docker save gas-tracker-bot | gzip > gas-tracker-bot.tar.gz
+
+# Переносим на сервер и загружаем
+scp gas-tracker-bot.tar.gz user@server:/tmp/
+ssh user@server "docker load < /tmp/gas-tracker-bot.tar.gz"
+```
+
+---
+
+## 🔧 Команды управления
+
+| Команда | Описание |
+|---------|----------|
+| `docker stop gas-bot` | Остановить бота |
+| `docker start gas-bot` | Запустить бота |
+| `docker restart gas-bot` | Перезапустить бота |
+| `docker logs -f gas-bot` | Следить за логами в реальном времени |
+| `docker rm gas-bot` | Удалить контейнер |
+
+---
+
+## 📋 Переменные окружения
+
+Создайте файл `.env`:
+```env
+TELEGRAM_BOT_TOKEN=токен_вашего_бота
+WEB3_PROVIDER_URL=ваш_rpc_url
+CHAT_ID=ваш_chat_id
+```
+
+---
+
+<div align="center">
+
+### ✨ Готово к мониторингу цен на газ 24/7! ✨
+
+</div>
 
 ### 🛠️ Управление контейнером
 
@@ -580,9 +700,8 @@ docker logs gas-bot > gas-bot.log 2>&1
 Если у вас есть вопросы или нужна помощь:
 
 - 📢 **Telegram канал**: [Gas Station](https://t.me/gastastion)
-- 📧 Email: support@gastrack.com
 - 💬 Разработчик: [@devheadb](https://t.me/devheadb)
-- 🐛 Issues: [GitHub Issues](https://github.com/your_username/gastracker/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/yarxhe/gastracker/issues)
 
 ---
 
